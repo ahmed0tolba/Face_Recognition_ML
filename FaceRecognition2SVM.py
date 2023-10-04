@@ -14,8 +14,20 @@ for i, splts in enumerate(splts.flat):
 from sklearn.model_selection import train_test_split
 
 X = faces.data
+print(type(X))
+print(len(X))
+print(X[0])
+print(len(X[0]))
+print(type(X[0]))
+print(X[0][0])
 y = faces.target
-
+print(type(y))
+print(len(y))
+print(y[0])
+print(y[0:10])
+# print(len(X[0]))
+# print(type(X[0]))
+# print(X[0][0])
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=42)
 
 from sklearn.svm import SVC
